@@ -10,7 +10,7 @@ Login to Azure portal, open cloud shell, select powershell and create lab using 
 
 1. Create resource group
 
-$ New-AzResourceGroup -Name 'myResourceGroup' -Location 'EastUS'
+      $ New-AzResourceGroup -Name 'myResourceGroup' -Location 'EastUS'
 
 2. Create VM
 
