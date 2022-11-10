@@ -14,16 +14,16 @@ Login to Azure portal, open cloud shell, select powershell and create lab using 
 
 2. Create VM
 
-$ New-AzVm -ResourceGroupName 'myResourceGroup' -Name 'myVM01' -Location 'East US'  -VirtualNetworkName 'myVnet' -SubnetName 'mySubnet' -SecurityGroupName 'myNetworkSecurityGroup' -PublicIpAddressName 'myPublicIpAddress' -OpenPorts 80,3389
+      $ New-AzVm -ResourceGroupName 'myResourceGroup' -Name 'myVM01' -Location 'East US'  -VirtualNetworkName 'myVnet' -SubnetName 'mySubnet' -SecurityGroupName 'myNetworkSecurityGroup' -PublicIpAddressName 'myPublicIpAddress' -OpenPorts 80,3389
 
 3. Change size of the VM
 
-$ $vm = Get-AzureRmVM -ResourceGroupName "myResourceGroup" -VMName "myVM01"
-$ $vm.HardwareProfile.VmSize = "Standard_B2s"
+      $ $vm = Get-AzureRmVM -ResourceGroupName "myResourceGroup" -VMName "myVM01"
+      $ $vm.HardwareProfile.VmSize = "Standard_B2s"
 
 4. Power off VM
 
-$ Stop-AzVM -ResourceGroupName "myResourceGroup" -Name "myVM01"
+      $ Stop-AzVM -ResourceGroupName "myResourceGroup" -Name "myVM01"
 
 5. Create Automation account (Home > Automation Accounts > Create > Select Resource Group Name "myResourceGroup" & provide Automation account Name "autouser01"> Review + Create)
 
