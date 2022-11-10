@@ -1,0 +1,1 @@
+# AZ-RB-AAD-DomainJoin-VM
